@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5.csproj": {}
+    "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5.csproj": {
+    "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5.csproj",
-        "projectName": "api_net5",
-        "projectPath": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5.csproj",
+        "projectUniqueName": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\gajal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\obj\\",
+        "outputPath": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gajal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,13 +40,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "FluentValidation": {
+            "fluentvalidation": {
               "target": "Package",
               "version": "[10.3.3, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
             }
           },
           "imports": [
@@ -60,9 +56,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
