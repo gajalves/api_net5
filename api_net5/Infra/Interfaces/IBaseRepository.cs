@@ -11,7 +11,7 @@ namespace api_net5.Infra.Interfaces
 		Task<T> Update(T obj);
 		Task Remove(int id);
 		Task<T> Get(int id);
-		Task<List<T>> Get();
+		Task<List<T>> GetAll();
 	}	
 }
 
