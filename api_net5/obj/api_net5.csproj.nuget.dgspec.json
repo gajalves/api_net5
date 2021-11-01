@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5.csproj": {}
+    "C:\\Users\\Gab\\Documents\\Projetos\\api_net5\\api_net5\\api_net5\\api_net5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5.csproj": {
+    "C:\\Users\\Gab\\Documents\\Projetos\\api_net5\\api_net5\\api_net5\\api_net5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5.csproj",
+        "projectUniqueName": "C:\\Users\\Gab\\Documents\\Projetos\\api_net5\\api_net5\\api_net5\\api_net5.csproj",
         "projectName": "api_net5",
-        "projectPath": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5.csproj",
-        "packagesPath": "C:\\Users\\gajal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\obj\\",
+        "projectPath": "C:\\Users\\Gab\\Documents\\Projetos\\api_net5\\api_net5\\api_net5\\api_net5.csproj",
+        "packagesPath": "C:\\Users\\Gab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gab\\Documents\\Projetos\\api_net5\\api_net5\\api_net5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gajal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gab\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[10.3.3, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -67,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

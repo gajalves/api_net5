@@ -7,7 +7,6 @@ namespace api_net5.Domain.Entities
 {
     public class User: Base
     {
-
         public string Nome { get; private set; }
 
         public string Email { get; private set; }
