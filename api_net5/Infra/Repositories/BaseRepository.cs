@@ -35,7 +35,11 @@ namespace api_net5.Infra.Repositories
 
         public virtual async Task<T> Get(int id)
         {
-            var obj = await _context.Set<T>().AsNoTracking().Where(obj => obj.Id == id).FirstOrDefaultAsync();
+            var obj = await _context
+                                .Set<T>()
+                                .AsNoTracking()
+                                .Where(obj => obj.Id == id)
+                                .FirstOrDefaultAsync();
 
             return obj;
         }
