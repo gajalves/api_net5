@@ -1,4 +1,5 @@
 ﻿using api_net5.Domain.Entities;
+using api_net5.Infra.Mappings;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,8 +15,23 @@ namespace api_net5.Infra.Context
                     
         }
 
+        public ModelContext(DbContextOptions<ModelContext> options) : base(options)
+        {
+
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseNpgsql("Host=localhsot;Database=apinet5;Username=postgres;Password=postgres");
+        }
+            
 
         public DbSet<User> Users { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.ApplyConfiguration(new UserMap());
+        }
         
     }
 }
