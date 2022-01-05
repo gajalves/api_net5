@@ -22,7 +22,9 @@ namespace api_net5.Infra.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhsot;Database=apinet5;Username=postgres;Password=postgres");
+            //optionsBuilder.UseNpgsql("Host=localhost;Database=apinet5;Username=postgres;Password=postgres");
+            optionsBuilder.UseNpgsql("Server=localhost;Port=54302;Database=apinet5;Username=postgres;Password=postgres");
+            
         }
             
 

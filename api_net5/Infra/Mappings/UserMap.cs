@@ -21,7 +21,7 @@ namespace api_net5.Infra.Mappings
                 .HasColumnType("INT");
 
             builder.Property(user => user.Nome)
-                .IsRequired().HasMaxLength(80).HasColumnName("nome").HasColumnType("VARCHAR(80)");
+                .IsRequired().HasMaxLength(50).HasColumnName("nome").HasColumnType("VARCHAR(50)");
 
             builder.Property(user => user.Email)
                 .IsRequired().HasMaxLength(180).HasColumnName("email").HasColumnType("VARCHAR(180)");

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using api_net5.Core.Exceptions;
 using api_net5.Domain.Validators;
 namespace api_net5.Domain.Entities
 {
@@ -53,7 +54,7 @@ namespace api_net5.Domain.Entities
                     _erros.Add(error.ErrorMessage);
                 }
 
-                throw new Exception("Alguns campos estão inválidos, por favor corrigir! " + _erros[0]);                
+                throw new DomainException("Alguns campos estão inválidos, por favor corrigir! " + _erros);
             }
 
             return true;
