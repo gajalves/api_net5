@@ -20,5 +20,10 @@ namespace api_net5.Core.Exceptions
         {
             _errors = errors;
         }
+
+        public DomainException(string message) : base(message)
+        {
+
+        }
     }
 }

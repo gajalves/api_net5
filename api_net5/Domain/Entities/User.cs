@@ -22,6 +22,8 @@ namespace api_net5.Domain.Entities
             Email = email;
             Senha = senha;
             _erros = new List<string>();
+
+            Validate();
         }
         
         public void AlteraNome(string nome)
