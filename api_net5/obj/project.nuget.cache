@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NdD3mR/CyLFt4TR7jpVERgJQWsk6SeLE7JrUwT5gfkT5mN6kNR+qTO5bazNx/gsEUYQt1mwhG+lJTAUwL7yVzg==",
+  "dgSpecHash": "yTK8LOUC3LgR8nXNwTheQSN1ClQ/bfwLmRQabxhNEL3NAlDvBel6JCJBlnbPyGw8MvEOOSwutrNzYpLjAe36fA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5\\api_net5.csproj",
+  "projectFilePath": "D:\\projetos\\api_net5\\api_net5\\api_net5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gajal\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\gajal\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
