@@ -4,6 +4,7 @@ using api_net5.Services.Interfaces;
 using api_net5.Utilities;
 using api_net5.ViewModels;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,7 @@ namespace api_net5.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         [Route("/api/v1/users/create")]
         public async Task<IActionResult> Create([FromBody]CreateUserViewModel userViewModel)
         {
@@ -51,6 +53,7 @@ namespace api_net5.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         [Route("/api/v1/users/update")]
         public async Task<IActionResult> Update([FromBody] UpdateUserViewModel userViewModel)
         {
@@ -77,6 +80,7 @@ namespace api_net5.Controllers
         }
 
         [HttpDelete]
+        [Authorize]
         [Route("/api/v1/users/delete/{id}")]
         public async Task<IActionResult> Remove(int id)
         {
@@ -102,6 +106,7 @@ namespace api_net5.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         [Route("/api/v1/users/GetById/{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -138,6 +143,7 @@ namespace api_net5.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         [Route("/api/v1/users/GetAll")]
         public async Task<IActionResult> GetAll()
         {
@@ -163,6 +169,7 @@ namespace api_net5.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         [Route("/api/v1/users/GetByEmail")]
         public async Task<IActionResult> GetByEmail([FromQuery] string email)
         {
@@ -198,6 +205,7 @@ namespace api_net5.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         [Route("/api/v1/users/SearchByName")]
         public async Task<IActionResult> SearchByName([FromQuery] string name)
         {
