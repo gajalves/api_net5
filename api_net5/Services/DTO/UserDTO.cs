@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace api_net5.Services.DTO
@@ -13,6 +14,7 @@ namespace api_net5.Services.DTO
 
         public string Email { get; set; }
 
+        [JsonIgnore]
         public string Senha { get; set; }
 
         public UserDTO()

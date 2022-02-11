@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T+Jgc2NiXAk597j9bXcH/+AsXTxC4IkB0fWDBNnGOF1BEGQfvGAX/nu0PrjsnJ9785AwlZSYvRRNsf+5tpDfPw==",
+  "dgSpecHash": "f8J8EsmUSmSPlywRe4ySnU4gyJRGpZ1OkbYrH/VXO4JwowsNo9MO01BYEawAswBXjeJ/oRnH6HrXMjesBSbT6Q==",
   "success": true,
-  "projectFilePath": "D:\\projetos\\api_net5\\api_net5\\api_net5.csproj",
+  "projectFilePath": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5\\api_net5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gajal\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\gajal\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",

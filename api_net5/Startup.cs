@@ -2,6 +2,8 @@ using api_net5.Domain.Entities;
 using api_net5.Infra.Context;
 using api_net5.Infra.Interfaces;
 using api_net5.Infra.Repositories;
+using api_net5.Services.Cryptography.Algorithms;
+using api_net5.Services.Cryptography.Interfaces;
 using api_net5.Services.DTO;
 using api_net5.Services.Interfaces;
 using api_net5.Services.Services;
@@ -83,6 +85,7 @@ namespace api_net5
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ITokenGenerator, TokenGenerator>();
+            services.AddScoped<IAesCryptography, AesCryptography>();
 
             #region Swagger
 

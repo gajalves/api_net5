@@ -1,12 +1,15 @@
 ﻿using api_net5.Core.Exceptions;
 using api_net5.Domain.Entities;
 using api_net5.Infra.Interfaces;
+using api_net5.Services.Cryptography.Interfaces;
 using api_net5.Services.DTO;
 using api_net5.Services.Interfaces;
 using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace api_net5.Services.Services
@@ -15,11 +18,13 @@ namespace api_net5.Services.Services
     {
         private readonly IMapper _mapper;
         private readonly IUserRepository _userRepository;
+        private readonly IAesCryptography _aesCryptography;
 
-        public UserService(IMapper mapper, IUserRepository userRepository)
+        public UserService(IMapper mapper, IUserRepository userRepository, IAesCryptography aesCryptography)
         {
             _mapper = mapper;
             _userRepository = userRepository;
+            _aesCryptography = aesCryptography;
         }
 
         public async Task<UserDTO> Create(UserDTO userDTO) 
@@ -31,7 +36,8 @@ namespace api_net5.Services.Services
 
             User user = _mapper.Map<User>(userDTO);
             user.Validate();
-
+            user.AlteraSenha(_aesCryptography.Encrypt(user.Senha));
+            
             User userCreate = await _userRepository.Create(user);
 
             return _mapper.Map<UserDTO>(userCreate);
@@ -46,6 +52,7 @@ namespace api_net5.Services.Services
 
             User user = _mapper.Map<User>(userDTO);
             user.Validate();
+            user.AlteraSenha(_aesCryptography.Encrypt(user.Senha));
 
             User userCreate = await _userRepository.Update(user);
 
@@ -83,6 +90,13 @@ namespace api_net5.Services.Services
             List<User> user = await _userRepository.SearchByName(name);
 
             return _mapper.Map<List<UserDTO>>(user);
+        }
+
+        private string ComputeHash(string input, SHA256CryptoServiceProvider hashAlgorithm)
+        {
+            Byte[] inputBytes = Encoding.UTF8.GetBytes(input);
+            Byte[] hashedBytes = hashAlgorithm.ComputeHash(inputBytes);
+            return BitConverter.ToString(hashedBytes);
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projetos\\api_net5\\api_net5\\api_net5.csproj": {}
+    "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5\\api_net5.csproj": {}
   },
   "projects": {
-    "D:\\projetos\\api_net5\\api_net5\\api_net5.csproj": {
+    "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5\\api_net5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projetos\\api_net5\\api_net5\\api_net5.csproj",
+        "projectUniqueName": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5\\api_net5.csproj",
         "projectName": "api_net5",
-        "projectPath": "D:\\projetos\\api_net5\\api_net5\\api_net5.csproj",
+        "projectPath": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5\\api_net5.csproj",
         "packagesPath": "C:\\Users\\gajal\\.nuget\\packages\\",
-        "outputPath": "D:\\projetos\\api_net5\\api_net5\\obj\\",
+        "outputPath": "C:\\Users\\gajal\\source\\repos\\api_net5\\api_net5\\api_net5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gajal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -101,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
